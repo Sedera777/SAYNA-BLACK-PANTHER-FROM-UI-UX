@@ -1,0 +1,251 @@
+:root {
+    --primary-blue: #031a36;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    background: var(--primary-blue);
+}
+
+header .brand {
+    margin-left: 20px;
+}
+
+.conteneur {
+    margin: 0 20px
+}
+
+
+/* header img:nth-of-type(2) {
+    margin-top: -50px;
+} */
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    padding: 0;
+    display: none;
+}
+
+.fa-ellipsis {
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+header div:nth-of-type(2),
+.img-description {
+    display: none;
+}
+
+main .description {
+    background: url('../img/Pantherhome1.png') no-repeat, #031a36;
+    background-position: center;
+    background-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.card-container {
+    background: var(--primary-blue);
+}
+
+.card-container .card:nth-of-type(1) {
+    width: 430px;
+}
+
+.card-container .card:nth-of-type(2) {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.card-container .card .card-img {
+    text-align: center;
+}
+
+.Tchalla {
+    background: var(--primary-blue);
+}
+
+.Tchalla .card {
+    text-align: center;
+}
+
+.Tchalla .card-text .text {
+    text-align: left;
+}
+
+.Tchalla .pantherhome6 {
+    width: 400px;
+}
+
+.contact-us {
+    background: url(../img/Pantherhome7.png) #000000;
+    background-position-y: 100%;
+    height: 430px;
+}
+
+.contact-us .formulaire {
+    /* max-width: 700px; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-us .formulaire .form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 40px;
+    background: rgba(238, 238, 238, 0.3);
+}
+
+.contact-us .formulaire form {
+    display: grid;
+    place-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 250px;
+    /* max-width: 600px; */
+    border-radius: 30px;
+}
+
+textarea {
+    width: 250px;
+    /* max-width: 600px; */
+    border-radius: 30px;
+}
+
+input[type="submit"] {
+    border-radius: 30px;
+    padding: 5px 25px;
+}
+
+footer {
+    padding: 20px 0;
+    background: var(--primary-blue);
+}
+
+footer .conteneur {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+footer .retrouvez-nous,
+footer .droits {
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    nav,
+    .img-description {
+        display: none;
+    }
+    header {
+        display: flex;
+        align-items: center;
+    }
+    header div a {
+        color: #fff;
+        text-decoration: none;
+    }
+    header div:nth-of-type(2) {
+        display: flex;
+        margin-right: 30px;
+    }
+    header div:nth-of-type(2) a {
+        padding-right: 30px;
+    }
+    hr {
+        display: none;
+    }
+    main .description {
+        height: 500px;
+    }
+    .card-container {
+        display: flex;
+    }
+    .home4 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    header .brand {
+        margin-left: 80px;
+    }
+    main .description {
+        display: flex;
+        background: #031a36;
+    }
+    main .img-description {
+        display: block;
+    }
+    .img-description img {
+        width: 600px;
+    }
+    main .description .conteneur {
+        padding-top: 100px;
+        margin-left: 80px;
+    }
+    .card-container .card:nth-of-type(1) {
+        width: 600px;
+        margin-left: 30px;
+    }
+    .card-container .card:nth-of-type(2) {
+        width: 700px;
+        margin-left: 0;
+    }
+    .home4 {
+        width: 150px;
+        display: inline;
+    }
+    .card-container .card {
+        display: flex;
+        align-items: center;
+    }
+    .card-container .card .conteneur {
+        margin: 0;
+    }
+    .home2 {
+        width: 270px;
+    }
+    .home3 {
+        width: 200px;
+    }
+    .card-text {
+        height: 230px;
+        padding: 10px 20px;
+        background: #022652;
+    }
+}
